@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="version1_0.view.HomeOverviewController">
+   <children>
+      <SplitPane dividerPositions="0.2353923205342237" layoutX="137.0" layoutY="115.0" prefHeight="800.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="99.0" layoutY="141.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="researchButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="1200.0" text="搜索" />
+                        <Button fx:id="indexButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="1200.0" text="索引" />
+                        <Button fx:id="addButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="1200.0" text="添加" />
+                        <Button fx:id="helpButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="1200.0" text="帮助" />
+                        <Button fx:id="quitButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="1200.0" text="退出" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="798.0" prefWidth="861.0">
+               <children>
+                  <Button fx:id="goButton" layoutX="306.0" layoutY="447.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" text="搜索" />
+                  <ChoiceBox fx:id="choiceBox" layoutX="194.0" layoutY="313.0" prefHeight="30.0" prefWidth="112.0" />
+                  <TextField fx:id="textField" layoutX="333.0" layoutY="313.0" prefHeight="30.0" prefWidth="472.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
