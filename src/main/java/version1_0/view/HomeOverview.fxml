@@ -14,7 +14,7 @@
                   <VBox layoutX="99.0" layoutY="141.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <Button fx:id="researchButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="1200.0" text="搜索" />
-                        <Button fx:id="indexButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="1200.0" text="索引" />
+                        <Button fx:id="indexButton" mnemonicParsing="false" onAction="#openIndex" prefHeight="45.0" prefWidth="1200.0" text="索引" />
                         <Button fx:id="addButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="1200.0" text="添加" />
                         <Button fx:id="helpButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="1200.0" text="帮助" />
                         <Button fx:id="quitButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="1200.0" text="退出" />

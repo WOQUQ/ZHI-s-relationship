@@ -24,11 +24,29 @@ import javafx.collections.ObservableList;
  */
 public class Person {
 
+	private StringProperty personId = new SimpleStringProperty("");//0001
 	private  StringProperty name = new SimpleStringProperty(""); 
 	private  StringProperty location = new SimpleStringProperty(""); 
 	private  ObjectProperty<LocalDate> birthday =new SimpleObjectProperty<LocalDate>(LocalDate.of(1995, 10, 25));
 	private  StringProperty job = new SimpleStringProperty(""); 
 	private  StringProperty age = new SimpleStringProperty(""); 
+	private  StringProperty email = new SimpleStringProperty("");
+	public StringProperty getPersonId() {
+		return personId;
+	}
+
+	public void setPersonId(StringProperty personId) {
+		this.personId = personId;
+	}
+
+	public StringProperty getAge() {
+		return age;
+	}
+
+	public void setAge(StringProperty age) {
+		this.age = age;
+	}
+
 	private  StringProperty phoneNumber = new SimpleStringProperty(""); 
 	private  StringProperty weixin = new SimpleStringProperty(""); 
 	private  StringProperty qq = new SimpleStringProperty("");
@@ -118,8 +136,10 @@ public class Person {
 	 * Constructor
 	 * 
 	 */
-	public Person(String name,String location,LocalDate birthday,String job,
-			String phoneNumber,String weixin,String qq,String relation,String note,String age) {
+	public Person(String id, String name,String location,LocalDate birthday,String job,
+			String phoneNumber,String weixin,String qq,String relation,String note,String age,String email) {
+		
+		this.personId = new SimpleStringProperty(id);
 		this.name = new SimpleStringProperty(name);
 		this.location = new SimpleStringProperty(location);
 		this.birthday = new SimpleObjectProperty<LocalDate>(birthday);
@@ -130,7 +150,15 @@ public class Person {
 		this.relation = new SimpleStringProperty(relation);
 		this.note = new SimpleStringProperty(note);
 		this.age = new SimpleStringProperty(age);
-		
+		this.email = new SimpleStringProperty(email);
+	}
+
+	public StringProperty getEmail() {
+		return email;
+	}
+
+	public void setEmail(StringProperty email) {
+		this.email = email;
 	}
 
 	public StringProperty getName() {

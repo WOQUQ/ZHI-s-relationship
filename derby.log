@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Jul 09 09:14:48 CST 2019:
+正在使用类加载程序 sun.misc.Launcher$AppClassLoader@610455d6 引导数据库
+目录 D:\eclipse\workplace\relationship\zadb 中的 Derby 版本 The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579) 实例 a816c00e-016b-d44c-2445-0000070d2538
+已从 file:/D:/derby/db-derby-10.14.2.0-bin/lib/derby.jar 加载
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_201-b09
+user.dir=D:\eclipse\workplace\relationship
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+数据库类加载程序已启动 - derby.database.classpath=''
